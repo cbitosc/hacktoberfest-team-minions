@@ -25,7 +25,7 @@
 
       <p class="animated fadeIn text-muted">Minions Team</p>
       
-      <a href="" class="btn btn-default btn-rounded my-2" data-toggle="modal" data-target="#modalLRForm">LogIn/Register</a>
+      <a href="" class="btn btn-primary btn-rounded my-2" data-toggle="modal" data-target="#modalLRForm">LogIn/Register</a>
 
     </div>
 
@@ -39,6 +39,12 @@
   <script type="text/javascript" src="js/bootstrap.min.js"></script>
   <!-- MDB core JavaScript -->
   <script type="text/javascript" src="js/mdb.min.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function() {
+   $('.mdb-select').material_select();
+ });
+  </script>
+  
   </body>
 
 </html>
