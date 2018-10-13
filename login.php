@@ -1,4 +1,3 @@
-<!--Modal: Login / Register Form-->
 <div class="modal fade" id="modalLRForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
     <div class="modal-dialog cascading-modal" role="document">
         <!--Content-->
@@ -36,23 +35,28 @@
                                 <label data-error="wrong" data-success="right" for="modalLRInput11">Your password</label>
                             </div>
 
-                            <div class="md-form form-sm mb-4">
-                                <select class="mdb-select md-form colorful-select dropdown-primary" name="type">
-                                    <option value="student">STUDENT</option>
-                                    <option value="mnc">MNC</option>
-                                </select>
-                                <label>TYPE</label>
-                            </div>
+                            <div class="md-form form-sm mb-5">
+
+                                <div class="form-check">
+                                  <!-- <i class="fa fa-user prefix"></i> -->
+                                  <input type="radio" class="form-check-input" id="materialUnchecked" value="student" name="type" checked>
+                                  <label class="form-check-label" for="materialUnchecked" >STUDENT  </label>
+                                  <input type="radio" class="form-check-input" id="materialChecked" name="type" value="mnc">
+                                  
+                                  <label class="form-check-label" for="materialChecked">MNC</label>
+                              </div>
+
+                          </div>
                             <div class="text-center mt-2">
-                                <button class="btn btn-info">Log in <i class="fa fa-sign-in ml-1"></i></button>
+                                <button class="btn btn-primary">Log in <i class="fa fa-sign-in ml-1"></i></button>
                             </div>
                         </div>
                         <!--Footer-->
                         <div class="modal-footer">
                             <div class="options text-center text-md-right mt-1">
-                                <p>Forgot <a href="#" class="blue-text">Password?</a></p>
+                                <p>Forgot <a href="forgotpassword.php" class="blue-text">Password?</a></p>
                             </div>
-                            <button type="button" class="btn btn-outline-info waves-effect ml-auto" data-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-outline-primary waves-effect ml-auto" data-dismiss="modal">Close</button>
                         </div>
 
                     </form>
@@ -64,7 +68,7 @@
                         <!--Body-->
                         <form class="modal-body">
                             <div class="md-form form-sm mb-5">
-                                <i class="fa fa-envelope prefix"></i>
+                                <i class="fa fa-user prefix"></i>
                                 <input type="email" id="modalLRInput12" name="name"class="form-control form-control-sm validate">
                                 <label data-error="wrong" data-success="right" for="modalLRInput12">Your Name</label>
                             </div>
@@ -82,16 +86,22 @@
                                 <label data-error="wrong" data-success="right" for="modalLRInput13">Your password</label>
                             </div>
 
-                            <div class="md-form form-sm mb-4">
-                                <select class="mdb-select md-form colorful-select dropdown-primary" name="type">
-                                    <option value="student">STUDENT</option>
-                                    <option value="mnc">MNC</option>
-                                </select>
-                                <label>TYPE</label>
-                            </div>
+                            <div class="md-form form-sm mb-5">
+
+                                <div class="form-check">
+                                  <input type="radio" class="form-check-input" id="materialUnchecked" value="student" name="type" checked>
+                                  <label class="form-check-label" for="materialUnchecked" >STUDENT  </label>
+                                  <input type="radio" class="form-check-input" id="materialChecked" name="type" value="mnc">
+                                  <label class="form-check-label" for="materialChecked">MNC</label>
+                              </div>
+
+                          </div>
+
+                        <!-- </div> -->
 
                             <div class="text-center form-sm mt-2">
-                                <button class="btn btn-info">Sign up <i class="fa fa-sign-in ml-1"></i></button>
+
+                                <button class="btn btn-primary">Sign up <i class="fa fa-sign-in ml-1"></i></button>
                             </div>
 
                         </div>
