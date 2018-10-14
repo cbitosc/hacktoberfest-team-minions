@@ -1,0 +1,173 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 25 Feb, 2018, 11:03:35 AM
+    Author     : chanakyagondi
+*/
+body.b1{
+    background-image:url("placement1.jpg");
+    background-repeat: no-repeat;
+    background-size: 1366px 700px;
+}
+body.b2{
+    background-image:url("sss.jpg");
+    background-repeat: no-repeat;
+    background-size: 1366px 1300px;
+}
+
+div.d1{
+    position:relative;
+    left:450px;
+    top:10px;
+    width:450px;
+    border-radius: 25px;
+    height: fit-content;
+    background: red; 
+    background: linear-gradient(red, yellow);
+    border: 15px solid  #0f0406;
+    color:black;
+    font:28px;
+    font-weight:bold;
+    text-shadow:4px 4px 8px white;
+}
+div.d2{
+    position:relative;
+    left:200px;
+    top:40px;
+    width: 400px;
+    background-color: #eeeef5;
+    color: #f0170b;
+    font-weight: bold
+}
+div.d3
+{
+    position:relative;
+    left: 900px;
+}
+div.d4
+{
+    position: relative;
+    left: 830px;
+}
+div.d6
+{
+    font-size: 18px;
+    position:relative;
+    left: 100px;
+    top: 5px;
+    width:400px;
+    font-weight: bold;
+    background-color: aqua;
+    color: red;
+}
+div.d5
+{
+    font-size: 18px;
+    color: #0c1413;
+    background-color: aqua;
+    opacity:0.7;
+    font-weight: bold;
+}
+div.d7
+{
+    position:relative;
+    left: 460px;
+    top:13px;
+    font-size: 18px;
+    color: #0c1413;
+    background-color: #edd3d3;
+    opacity:0.8;
+    font-weight: bold;
+    width: fit-content
+}
+div.d8
+{
+    position:relative;
+    left: 1200px;
+    top: 5px;
+    width: fit-content
+}
+div.d9
+{
+    position:relative;
+    left: 10px;
+    top: 4px
+}
+div.d10{
+    position:relative;
+    left:10px;
+    top:30px;
+    width:450px;
+    border-radius: 25px;
+    height: fit-content;
+    background: red; 
+    background: linear-gradient(whitesmoke, yellow);
+    border: 15px solid  #0f0406;
+    color:black;
+    font:28px;
+    font-weight:bold;
+    text-shadow:4px 4px 8px white;
+}
+div.d11{
+    position:relative;
+    left:10px;
+    top:30px;
+    width:450px;
+    border-radius: 25px;
+    height: fit-content;
+    background: red; 
+    background: linear-gradient(greenyellow, orangered);
+    border: 15px solid  #0f0406;
+    color:black;
+    font:28px;
+    font-weight:bold;
+    text-shadow:4px 4px 8px white;
+}
+
+div.d12{
+    position:relative;
+    left:10px;
+    top:30px;
+    width:450px;
+    border-radius: 25px;
+    height: fit-content;
+    background: red; 
+    background: linear-gradient(aqua, chocolate);
+    border: 15px solid  #0f0406;
+    color:black;
+    font:28px;
+    font-weight:bold;
+    text-shadow:4px 4px 8px white;
+}
+
+div.d13{
+    position:relative;
+    width:1356px;
+    border-radius: 25px;
+    background: red; 
+    background: linear-gradient(wheat, gold);
+    border: 15px solid  #0f0406;
+    color:black;
+    font-weight:bold;
+    text-shadow:4px 4px 8px white;
+}
+
+#he1{
+    text-align:center;
+    text-shadow:4px 4px 8px blue;
+    color: black;
+    font-size: 40px;
+    font-weight: bold;
+}
+#t1{
+    border: 2px solid #eeeef5;
+    background: #121212;
+    color: #008200;
+    text-align:center;
+    border-radius: 20px;
+} 
+
+ 

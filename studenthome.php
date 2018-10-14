@@ -15,8 +15,7 @@ include 'studentlogin.php';
         
     </head>
     <body>
-        <?php include 'studentlogin.php';
-        ?>
+        
             <table>
                 <p style="font-size: 18px; color: #28ff00;"><br><b>OBJECTIVE:</b><br>
 The major objective of campus placement is to identify the talented and qualified professionals before they complete their 
