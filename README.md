@@ -1,5 +1,8 @@
 # hacktoberfest-team-minions
-Training and placement cell
+Training and placement cell - a web application
+
+The Placement cell connects students and companies that are vissiting the campus, it bridges the communication gap between students and placement officers.
+The placement cell operates around the year to facilitate communication between companies and graduates.
 
 Team members:
 
