@@ -25,6 +25,7 @@ if(isset($_POST["submit"])){
                 header('location:studenthome.php');
             else {
                 header('location:companyhome.php');
+
             }
         }else{
             echo "File upload failed, please try again.";

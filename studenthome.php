@@ -18,6 +18,5 @@
                 with creating a very good impact in them which makes them feel every minute they spend in the placement training session is worth 
                 being there and will help them in getting placed in their dream companies.<br></p>
             </p>
-        </div><?php include 'footer.php' ?>
     </body>
 </html>

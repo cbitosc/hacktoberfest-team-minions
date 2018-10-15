@@ -1,4 +1,6 @@
-<?php
+<html>
+  <head>
+      <?php
 session_start();
 include 'header.php';
 include 'footer.php';
@@ -28,11 +30,6 @@ else {
     exit(); 
 }
 ?>
-
-<html>
-    <head>
-    <title> </title>
-    <!-- <link rel="stylesheet" href="external.css"> -->
     <style>
             input[type=text] 
             {

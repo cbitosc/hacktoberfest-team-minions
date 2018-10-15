@@ -2,7 +2,7 @@
 <html lang="en">
 <?php include 'header.php' ?>
 <body>
-            <?php
+<?php
 session_start();
 include 'studentlogin.php';
 $name=$_SESSION["name"];
@@ -77,8 +77,6 @@ else
                         return true;
 		}
     </script>
-      
       <?php include 'footer.php' ?>
         </body>
-    
 </html>

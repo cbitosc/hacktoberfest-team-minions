@@ -1,10 +1,8 @@
-<?php
-include 'studentlogin.php'
-?>
 
 <html>
-    <?php include 'header.php'?>
-
+<?php include 'header.php';
+      include 'studentlogin.php';
+?>
     <body >
         <div class="jumbotron">
          <div class="d11">

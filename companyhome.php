@@ -1,11 +1,12 @@
 <?php
 session_start();
+
 include 'header.php';
+
 include 'companylogin.php';
 ?>
 <html>
     <head>
-        
         <script>
             history.pushState(null, null, location.href);
             window.onpopstate = function () 

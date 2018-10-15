@@ -40,8 +40,7 @@ if($r->num_rows)
                 }
             }
             else 
-            {
-                
+            {   
                 header('Refresh:0; url=index.php');
         echo '<script language="javascript">';
         echo "alert('PLEASE ENTER THE CORRECT LOGIN')";
@@ -57,7 +56,7 @@ else
     echo '<script language="javascript">';
     echo "alert('PLEASE ENTER THE CORRECT LOGIN')";
     echo '</script>';
-            
+
     
 }
     $conn->close();

@@ -1,6 +1,7 @@
 <?php
 session_start();
 
+
 include 'header.php';
 include 'studentlogin.php';
 include 'footer.php';
@@ -127,7 +128,6 @@ else{
             <tr>
                 <td>Gender:</td>
                 <td><input type="radio" name="gender"  required/>male
-                   
                 </td>
             </tr>
             <tr>
@@ -142,6 +142,7 @@ else{
             <tr>
                 <td>GPA:</td>
                 <td><input type="text" name="undergraduationpercentage" min="70" max="100" required/></td>
+
             </tr>
             <tr>
                 <td colspan="2"><hr></td>

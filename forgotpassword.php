@@ -1,7 +1,6 @@
 <html>
     <?php include 'header.php'; 
     include 'footer.php';?>
-
 <script>
                     function verify_em(s)
             {
@@ -40,25 +39,22 @@
         <a class="navbar-brand" href="#">Training and Placement Cell</a>
     </nav>
         <div class="jumbotron" style="height:100vh;" id="frsDivTop">
-      		
+
     		<div align="center">
     		    <br/><br/>
     		    <div id="form" style=" ">
                         <form action="sendpassword.php" autocomplete="off">
+
     					<h2 >Login Here</h2><br>
+
                                         <input type="text" id="email" name="email" placeholder="Enter Email" autofocus="autofocus" onblur="verify_em(this.id)"onfocus="fo()" style="border-radius : 10px; padding : 5px" required>
 
                                         <p id="p3"></p>
     					<input type="submit" name="sub" value="SUBMIT" class="btn btn-primary">
-                                        <input type="reset" value="RESET" class="btn btn-primary">
+                       <input type="reset" value="RESET" class="btn btn-primary">
     				</form><br/>
-    				
-    				
-    				
     			</div>
     		</div>
-    		
-    		<br/><br/>
 		</div>
     </body>
 </html>

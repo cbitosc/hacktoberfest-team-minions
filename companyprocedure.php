@@ -1,8 +1,7 @@
+<html>
 <?php
  include 'companylogin.php';
-?>
-<html>
-    <?php include'header.php'; ?>
+ include'header.php'; ?>
     <body >
         <div class="jumbotron" style="height:100vh; font-weight:'bold';">
         <h3>Procedure</h3>

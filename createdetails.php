@@ -1,29 +1,12 @@
+<html>
 <?php
 session_start();
-include 'header.php';
- include 'companylogin.php';
+include 'companylogin.php';
  $a=$_SESSION["name"];
  $conn=new mysqli("localhost:3306", "root", "", "chanakya");
- ?>
 
-<html>
-    <head>
-    <title> </title>
-    <!-- <link rel="stylesheet" href="external.css"> -->
-    <style>
-            input[type=text] 
-            {
-                border: 2px solid #0820f3;
-            }
-            input[type=number]
-            {
-                    border: 2px solid #0820f3;
-            }
-            input[type=date]
-            {
-                border: 2px solid #0820f3;
-            }
-        </style>
+ include 'header.php';?>
+<head>
         <script>
             function verify_em(s)
             {
@@ -59,7 +42,9 @@ include 'header.php';
             </script>
     </head>
     <body>
+
      <div class="jumbotron" style="height:100vh;" align="center">
+
          <form action="submitdetails.php" onsubmit="valthis()">   
     <table border="0" width="40" cellspacing="10" cellpadding="4">
         <thead>
@@ -89,7 +74,7 @@ include 'header.php';
             </tr>
             <tr>
                 <td>Departments To Be Allowed:</td>
-                <td><!-- Material unchecked -->
+          <td>
                 <div class="form-check">
     <input type="checkbox" class="form-check-input" name="companydepartments[]" id="companydepartments" value="cse">
     <label class="form-check-label" for="companydepartments">Cse</label>
@@ -118,7 +103,6 @@ include 'header.php';
     <input type="checkbox" class="form-check-input" name="companydepartments[]" id="companydepartments6" value="civil">
     <label class="form-check-label" for="companydepartments6">civil</label>
 </div>
-
                 <td id="p1"></td>
             </tr>
             <tr>
@@ -132,12 +116,11 @@ include 'header.php';
             <tr>
                 <td colspan="2" align="center"><input type="submit" value="SUBMIT" name="submit" /></td>
             </tr>
-
         </tbody>
-        
     </table>
     </form> 
     </div>
         <?php include "footer.php"?>
+
 </body>
 </html>

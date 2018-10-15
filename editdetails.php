@@ -85,7 +85,7 @@ else{
             </tr>
             <tr>
                 <td>Departments To Be Allowed:</td>
-                <td><!-- Material unchecked -->
+                <td>
                 <div class="form-check">
     <input type="checkbox" class="form-check-input" name="companydepartments[]" id="companydepartments" value="cse">
     <label class="form-check-label" for="companydepartments">Cse</label>
@@ -134,6 +134,6 @@ else{
     </table>
     </form> 
     </div>
-        <?php include 'footer.php' ?>
+<!--         <?php include 'footer.php' ?> -->
 </body>
 </html>

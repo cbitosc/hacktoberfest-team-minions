@@ -1,16 +1,17 @@
+
 <!Doctype html>
 <html>
 <?php
 
 include 'header.php';
 include 'studentlogin.php';
-
 $conn=new mysqli("localhost:3306", "root", "", "chanakya");
 if($conn->connect_error)
 {
     die("connection failed".$conn->connect_error);
 }
 ?>
+
 
 <Script>
             function verify_em(s)
@@ -27,7 +28,7 @@ if($conn->connect_error)
                     var f="";
                     document.getElementById("p3").innerHTML=f;
                 }
-}
+            }
             function verify_cn(x)
             {
                 var z=document.getElementById(x).value;
@@ -56,7 +57,6 @@ if($conn->connect_error)
             <tr>
                 <td colspan="2" ><b>Your Contact Information</b></td>
             </tr>
-    
             <tr>
                 <td>Name:</td>
                 <td><input type="text" name="name"  required/></td>
@@ -97,13 +97,12 @@ if($conn->connect_error)
             </tr>
             <tr>
             <div class="form-check">
-  <!-- <i class="fa fa-user prefix"></i> -->
   <td>Gender:</td>
- <td> <input type="radio" class="form-check-input" id="materialUnchecked1" value="male" name="gender" checked>
-  <label class="form-check-label" for="materialUnchecked1" >Male  </label></td>
-  <td><input type="radio" class="form-check-input" id="materialChecked1" name="gender" value="female">
+ <td> <input type="radio" class="form-check-input" id="materialmle" value="male" name="gender" checked>
+  <label class="form-check-label" for="materialmale" >Male  </label></td>
+  <td><input type="radio" class="form-check-input" id="materialfemale" name="gender" value="female">
   
-  <label class="form-check-label" for="materialChecked1">Female</label></td>
+  <label class="form-check-label" for="materialfemale">Female</label></td>
 </div></tr>
             <tr>
                 <td colspan="2"><hr></td>
@@ -141,9 +140,9 @@ if($conn->connect_error)
         </tbody>
         
     </table>
-    </form> 
-         
+    </form>       
    </div>
         <?php include 'footer.php' ?>
+
 </body>
 </html>

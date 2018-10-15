@@ -70,6 +70,7 @@
                             <div class="md-form form-sm mb-5">
                                 <i class="fa fa-user prefix"></i>
                                 <input type="text" id="modalLRInput12" name="name" class="form-control form-control-sm validate">
+
                                 <label data-error="wrong" data-success="right" for="modalLRInput12">Your Name</label>
                             </div>
 
@@ -96,6 +97,7 @@
   
   <label class="form-check-label" for="materialChecked1">MNC</label>
 </div>
+
                           </div>
 
                         <!-- </div> -->

@@ -4,7 +4,6 @@ session_start();
 $_SESSION["name"]=$_GET["name"];
 $_SESSION["pwd"]=$_GET["password"];
 $_SESSION["type"]=$_GET["type1"];
-
 $_SESSION["email"]=$_GET["email"];
 $name=$_SESSION["name"];
 $pwd=$_SESSION["pwd"];

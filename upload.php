@@ -1,9 +1,10 @@
+<!DOCTYPE html>
+<html lang="en">
 <?php
 include 'header.php';
 include 'footer.php';
-include 'studentlogin.php';?>
-<!DOCTYPE html>
-<html lang="en">
+include 'studentlogin.php';
+?>
 <body>
     <div class="jumbotron" style="height:80vh">
     <form action="uploadimg.php" method="post" enctype="multipart/form-data">
