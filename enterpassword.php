@@ -1,45 +1,10 @@
-<?php
-include 'studentlogin.php'
-?>
 
 <html>
-    <head>
-        <link rel="stylesheet" href="external.css">
-    <style>
-            input[type=text] 
-            {
-                border: 2px solid #0820f3;
-            }
-            input[type=number]
-            {
-                    border: 2px solid #0820f3;
-            }
-            input[type=date]
-            {
-                border: 2px solid #0820f3;
-            }
-        </style>
-        <script>
-        function newconf()
-        {
-                var x=document.getElementById("passbabs").value;
-                var y=document.getElementById("pa").value;
-    
-            if(!x.match(y))
-            {
-                var e="sorry,you're passwords are not matching";
-                document.getElementById("td5").innerHTML=e;
-            }
-            else
-            {
-                document.getElementById("td5").innerHTML="";
-            }
-        }
-        </script>
-
-    </head>
+<?php include 'header.php';
+      include 'studentlogin.php';
+?>
     <body >
-        <center>
+        <div class="jumbotron">
          <div class="d11">
         <form action="changepassword.php" >
         <table border="0" width="40" cellspacing="10" cellpadding="4" >
@@ -70,6 +35,25 @@ include 'studentlogin.php'
         </table>
         </form>
              </div>
-    </center>
+    </div>
+
+    <?php  include "footer.php" ?>
+    <script>
+        function newconf()
+        {
+                var x=document.getElementById("passbabs").value;
+                var y=document.getElementById("pa").value;
+    
+            if(!x.match(y))
+            {
+                var e="sorry,you're passwords are not matching";
+                document.getElementById("td5").innerHTML=e;
+            }
+            else
+            {
+                document.getElementById("td5").innerHTML="";
+            }
+        }
+        </script>
     </body>
 </html>

@@ -1,4 +1,7 @@
+<!Doctype html>
 <?php
+include 'header.php';
+include 'footer.php';
 session_start();
  include 'companylogin.php';
  $a=$_SESSION["name"];
@@ -9,29 +12,17 @@ $row;
 if($r->num_rows)
     $row=$r->fetch_assoc();
 else{
-    echo "<html><div style='position:relative;
+    echo "<html><body><div style='position:relative;
     left:10px;
     top:30px;
     width:450px;
-    border-radius: 25px;
-    height: fit-content;
-    background: red; 
-    background: linear-gradient(red, yellow);
-    border: 15px solid  #0f0406;
-    color:black;
-    font:28px;
     font-weight:bold;
-    text-shadow:4px 4px 8px white;'>No details present to edit<a href='createdetails.php'> click here</a> to create</div></html>";
+    text-shadow:4px 4px 8px white;'>No details present to edit<a href='createdetails.php'> click here</a> to create</div><?php include 'footer.php'; ?></body></html>";
     exit();    
 }
 
 ?>
-
-<html>
-    <head>
-    <title> </title>
-    <link rel="stylesheet" href="external.css">
-    <style>
+  <style>
             input[type=text] 
             {
                 border: 2px solid #0820f3;
@@ -64,7 +55,7 @@ else{
             </script>
     </head>
     <body>
-     <div class="d2">
+     <div class="jumbotron" style='height:100vh' align='center'>
          <form action="submitdetails.php">   
     <table border="0" width="40" cellspacing="10" cellpadding="4">
         <thead>
@@ -94,17 +85,37 @@ else{
             </tr>
             <tr>
                 <td>Departments To Be Allowed:</td>
-                <td><input type="checkbox" name="companydepartments[]" value='cse' />CSE
-                    <input type="checkbox" name="companydepartments[]" value="mechanical" />MECH<br>
-                    <input type="checkbox" name="companydepartments[]" value="ece" />ECE
-                    <input type="checkbox" name="companydepartments[]" value="it" />IT<br>
-                    <input type="checkbox" name="companydepartments[]" value="eee" />EEE
-                    <input type="checkbox" name="companydepartments[]" value="chemical" />CHEMICAL<br>
-                    <input type="checkbox" name="companydepartments[]" value="civil" />CIVIL 
-                    <input type="checkbox" name="companydepartments[]" value="mba" />MBA<br>
-                    <input type="checkbox" name="companydepartments[]" value="production" />PRODUCTION
-                    
-                </td>
+                <td>
+                <div class="form-check">
+    <input type="checkbox" class="form-check-input" name="companydepartments[]" id="companydepartments" value="cse">
+    <label class="form-check-label" for="companydepartments">Cse</label>
+</div>
+<div class="form-check">
+    <input type="checkbox" class="form-check-input" name="companydepartments[]" id="companydepartments1" value="ece">
+    <label class="form-check-label" for="companydepartments1">ece</label>
+</div>
+<div class="form-check">
+    <input type="checkbox" class="form-check-input" name="companydepartments[]" id="companydepartments2" value="mech">
+    <label class="form-check-label" for="companydepartments2">Mech</label>
+</div>
+<div class="form-check">
+    <input type="checkbox" class="form-check-input" name="companydepartments[]" id="companydepartments3" value="eee">
+    <label class="form-check-label" for="companydepartments3">eee</label>
+</div>
+<div class="form-check">
+    <input type="checkbox" class="form-check-input" name="companydepartments[]" id="companydepartments4" value="it">
+    <label class="form-check-label" for="companydepartments4">it</label>
+</div>
+<div class="form-check">
+    <input type="checkbox" class="form-check-input" name="companydepartments[]" id="companydepartments5" value="chemical">
+    <label class="form-check-label" for="companydepartments5">chemical</label>
+</div>
+<div class="form-check">
+    <input type="checkbox" class="form-check-input" name="companydepartments[]" id="companydepartments6" value="civil">
+    <label class="form-check-label" for="companydepartments6">civil</label>
+</div>
+
+                <td id="p1"></td>
             </tr>
             <tr>
                 <td>Designation:</td>
@@ -123,6 +134,6 @@ else{
     </table>
     </form> 
     </div>
-        <br><br><br><br>
+<!--         <?php include 'footer.php' ?> -->
 </body>
 </html>

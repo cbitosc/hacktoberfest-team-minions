@@ -1,7 +1,9 @@
-
+<html>
 <?php
 session_start();
+include 'header.php';
 include 'studentlogin.php';
+include 'footer.php';
 $conn=new mysqli("localhost:3306", "root", "", "chanakya");
 if($conn->connect_error)
 {
@@ -23,24 +25,33 @@ else {
     width:450px;
     border-radius: 25px;
     height: fit-content;
-    background: red; 
-    background: linear-gradient(red, yellow);
-    border: 15px solid  #0f0406;
-    color:black;
-    font:28px;
     font-weight:bold;
-    text-shadow:4px 4px 8px white;'><br>No CV present to view<a href='createcv.php'> click here</a> to create a cv<br><br></div></html>";
+    text-shadow:4px 4px 8px white;'><br>No CV present to view<a href='createcv.php'> click here</a> to create a cv<br><br></div><?php include 'footer.php'; ?> </html>";
     exit();    
 }
 ?>
-
-<html>
-    <head>
-        <link rel="stylesheet" href="external.css">
-    
-    
-    </head>
- 
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Training and Placement Cell</title>
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- Bootstrap core CSS -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <!-- Material Design Bootstrap -->
+  <link href="css/mdb.min.css" rel="stylesheet">
+  <!-- Your custom styles (optional) -->
+  <link href="css/style.css" rel="stylesheet">
+        <script>
+            history.pushState(null, null, location.href);
+            window.onpopstate = function () 
+            {
+                history.go(1);
+            };
+        </script>
+        
+</head>
     <body>
      <div class="d13">
          <br>
@@ -48,7 +59,7 @@ else {
     <table align="center" border="0" width="40" cellspacing="10" cellpadding="4">
         <thead>
             <tr>
-                <th colspan="3" align="center" style="font-size:24px;font-weight: bold">CURRICULUM VITAE</th>
+                <th colspan="3" align="center" >CURRICULUM VITAE</th>
             </tr>
             <tr>
                 <td colspan="2"><hr></td>
@@ -133,7 +144,6 @@ else {
     </table>
     </form> 
          <br><br>
-    </div>
-        <br><br><br><br>
+    </div><?php include 'footer.php' ?>
 </body>
 </html>

@@ -1,5 +1,9 @@
-<?php
+<html>
+  <head>
+      <?php
 session_start();
+include 'header.php';
+include 'footer.php';
  include 'companylogin.php';
  $conn=new mysqli("localhost:3306", "root", "", "chanakya");
 if($conn->connect_error)
@@ -16,27 +20,16 @@ if($r->num_rows)
     
 }
 else {
-    echo "<html><div style='position:relative;
+    echo "<html><body><div style='position:relative;
     left:10px;
     top:30px;
     width:450px;
     border-radius: 25px;
-    height: fit-content;
-    background: red; 
-    background: linear-gradient(red, yellow);
-    border: 15px solid  #0f0406;
-    color:black;
-    font:28px;
     font-weight:bold;
-    text-shadow:4px 4px 8px white;'>No details present to edit<a href='createdetails.php'> click here</a> to create</div></html>";
+    text-shadow:4px 4px 8px white;'>No details present to edit<a href='createdetails.php'> click here</a> to create</div><?php include 'footer.php'; ?></body></html>";
     exit(); 
 }
 ?>
-
-<html>
-    <head>
-    <title> </title>
-    <link rel="stylesheet" href="external.css">
     <style>
             input[type=text] 
             {
@@ -53,7 +46,7 @@ else {
         </style>
     </head>
     <body>
-     <div class="d2">
+     <div class="jumbotron" style="height:80vh; " align='center'>
          <form action="submitdetails.php">   
     <table border="1" width="40" cellspacing="10" cellpadding="4">
         <thead>
@@ -101,6 +94,6 @@ else {
     </table>
     </form> 
     </div>
-        <br><br><br><br>
+        <?php include 'footer.php';?>
 </body>
 </html>

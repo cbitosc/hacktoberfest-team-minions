@@ -1,3 +1,7 @@
+<!DOCTYPE html>
+<html lang="en">
+<?php include 'header.php' ?>
+<body>
 <?php
 session_start();
 include 'studentlogin.php';
@@ -55,8 +59,6 @@ else
     }
 }
 ?>
-<html>
-    <link rel="stylesheet" href="external.css">
      <script type="text/javascript">
 		function apply(x)		
                 
@@ -75,5 +77,6 @@ else
                         return true;
 		}
     </script>
-    
+      <?php include 'footer.php' ?>
+        </body>
 </html>

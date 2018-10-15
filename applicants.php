@@ -1,4 +1,7 @@
+<html>
 <?php
+ include 'header.php';
+
 session_start();
  include 'companylogin.php';
  $a=$_SESSION["name"];
@@ -10,22 +13,22 @@ if(!$r)
     echo $conn->error;
 }
  ?>
-<html>
-    <link rel="stylesheet" href="external.css">
+
+    
     <body>
-     <center>
-    <div class="d12">
-        <br><br>
+    <div class="jumbotron" style="height:100vh;">
+        
+
         <table border="0" width='10' cellspacing='7' cellpadding='5'>
             <tr>
                 <td colspan="2" align="center" style="font-size:20px"><b>APPLICANTS</b></td>
             </tr>
-            <tr>
-                <td><hr></td>
-            </tr>
+
+            
             
                 <td>
-                <?php
+<?php
+
 while( $result1=$r->fetch_assoc())
 { 
     echo "<html><body>
@@ -47,7 +50,7 @@ while( $result1=$r->fetch_assoc())
            
         </table>
         <br><br>
-    </div>
-         </center>
+    <?php include 'footer.php';?>
+
     </body>
 </html>

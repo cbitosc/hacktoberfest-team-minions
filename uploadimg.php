@@ -22,9 +22,10 @@ if(isset($_POST["submit"])){
         $insert = $db->query("INSERT into image(username,img) VALUES ('$name', '$imgContent')");
         if($insert){
             if($_SESSION["type"]=='student')
-                include 'studenthome.php';
+                header('location:studenthome.php');
             else {
-                include 'companyhome.php';
+                header('location:companyhome.php');
+
             }
         }else{
             echo "File upload failed, please try again.";

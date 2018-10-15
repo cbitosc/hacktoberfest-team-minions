@@ -40,17 +40,23 @@ if($r->num_rows)
                 }
             }
             else 
-            {
-                echo "<html><body><center><p>PLEASE ENTER THE CORRECT PASSWORD</p></center></body></html>";
-                include 'index.php';
+            {   
+                header('Refresh:0; url=index.php');
+        echo '<script language="javascript">';
+        echo "alert('PLEASE ENTER THE CORRECT LOGIN')";
+        echo '</script>';
+                
             }
         }
     }
 }
 else 
 {
-     echo "<html><body><center><p>THIS USERNAME IS NOT REGISTERED PLEASE SIGNUP</p></center></body></html>";
-            include "index.php";
+    header('Refresh:0; url=index.php');
+    echo '<script language="javascript">';
+    echo "alert('PLEASE ENTER THE CORRECT LOGIN')";
+    echo '</script>';
+
     
 }
     $conn->close();

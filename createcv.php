@@ -1,4 +1,9 @@
+
+<!Doctype html>
+<html>
 <?php
+
+include 'header.php';
 include 'studentlogin.php';
 $conn=new mysqli("localhost:3306", "root", "", "chanakya");
 if($conn->connect_error)
@@ -7,25 +12,8 @@ if($conn->connect_error)
 }
 ?>
 
-<html>
-    <head>
-    <title> </title>
-    <link rel="stylesheet" href="external.css">
-    <style>
-            input[type=text] 
-            {
-                border: 2px solid #0820f3;
-            }
-            input[type=number]
-            {
-                    border: 2px solid #0820f3;
-            }
-            input[type=date]
-            {
-                border: 2px solid #0820f3;
-            }
-        </style>
-          <SCRIPT>
+
+<Script>
             function verify_em(s)
             {
                 var x=document.getElementById(s).value;
@@ -40,7 +28,7 @@ if($conn->connect_error)
                     var f="";
                     document.getElementById("p3").innerHTML=f;
                 }
-}
+            }
             function verify_cn(x)
             {
                 var z=document.getElementById(x).value;
@@ -54,15 +42,12 @@ if($conn->connect_error)
 
     </head>
     <body>
-     <div class="d13">
+     <div class="jumbotron "  align="center">
          <form action="cvsubmit.php">   
-    <table align='center' border="0" width="10" cellspacing="50" cellpadding="4">
+    <table  cellspacing="50" cellpadding="4">
         <thead>
             <tr>
-                <th colspan="2" style="font-size:24px;font-weight: bold" align="center">CURRICULUM VITAE</th>
-            </tr>
-            <tr>
-                <td colspan="2"><hr></td>
+                <th colspan="2"  align="center">CURRICULUM VITAE</th>
             </tr>
             <tr>
                 <td colspan="2"><hr></td>
@@ -70,9 +55,8 @@ if($conn->connect_error)
         </thead>
         <tbody>
             <tr>
-                <td colspan="2" style="font-size:20px;font-weight: bold"><b>Your Contact Information</b></td>
+                <td colspan="2" ><b>Your Contact Information</b></td>
             </tr>
-    
             <tr>
                 <td>Name:</td>
                 <td><input type="text" name="name"  required/></td>
@@ -87,7 +71,7 @@ if($conn->connect_error)
                 
             </tr>
             <tr>
-                <td colspan="2" id="p2" STYLE='color: #007bff'></td>
+                <td colspan="2" id="p2" ></td>
              </tr>
             <tr>
                 <td>Email:</td>
@@ -99,37 +83,40 @@ if($conn->connect_error)
                 <td><input type="text" name="department"  required/></td>
             </tr>
             <tr>
-                <td colspan="2" id="p3" STYLE='color: #007bff'></td>
+                <td colspan="2" id="p3" ></td>
              </tr>
              <tr>
                 <td colspan="2"><hr></td>
             </tr>
             <tr>
-                <td colspan="2" style="font-size:20px;font-weight: bold"><b>Optional Personal Information</b></td>
+                <td colspan="2" ><b>Optional Personal Information</b></td>
             </tr>
             <tr>
                 <td>DOB:</td>
                 <td><input type="date" name="dob" max="2000-12-31"  required/></td>
             </tr>
             <tr>
-                <td>Gender:</td>
-                <td><input type="radio" name="gender" value='male' required/>male
-                    <input type="radio" name="gender" value='female' required/>female
-                </td>
-            </tr>
+            <div class="form-check">
+  <td>Gender:</td>
+ <td> <input type="radio" class="form-check-input" id="materialmle" value="male" name="gender" checked>
+  <label class="form-check-label" for="materialmale" >Male  </label></td>
+  <td><input type="radio" class="form-check-input" id="materialfemale" name="gender" value="female">
+  
+  <label class="form-check-label" for="materialfemale">Female</label></td>
+</div></tr>
             <tr>
                 <td colspan="2"><hr></td>
             </tr>
             
             <tr>
                 <td>Percentage:</td>
-                <td><input type="number" name="percentage" min="0" max="100" required/></td>
+                <td><input type="number" name="percentage" min="0" max="10" required/></td>
             </tr>
             <tr>
                 <td colspan="2"><hr></td>
             </tr>
             <tr>
-                <td colspan="2" style="font-size:20px;font-weight: bold"><b>Others</b></td>
+                <td colspan="2" ><b>Others</b></td>
             </tr>
             <tr>
                 <td>Awards:</td>
@@ -153,9 +140,9 @@ if($conn->connect_error)
         </tbody>
         
     </table>
-    </form> 
-         <br><br><br><br>
+    </form>       
    </div>
-        
+        <?php include 'footer.php' ?>
+
 </body>
 </html>

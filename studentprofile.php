@@ -1,4 +1,6 @@
-<?php
+<!Doctype html>
+<html>
+<?php include 'header.php';
 session_start();
 include 'studentlogin.php';
 $db=new mysqli("localhost:3306", "root", "", "chanakya");
@@ -16,11 +18,7 @@ if($r->num_rows)
 $result = $db->query("SELECT * FROM image where username='$name'");
 $row1=$db->query("select c.* from company c where c.name in (select company from apply where student='$name')");
 ?>
-
-<html>
-    <link rel="stylesheet" href="external.css">
-    <body>
-     <center>
+<center>
     <div class="d10">
         <br><br>
         <table border="0" width='10' cellspacing='7' cellpadding='5'>
@@ -98,6 +96,7 @@ while( $result1=$row1->fetch_assoc())
         <br><br>
     </div>
          </center>
+         <?php include 'footer.php' ?>
     </body>
 </html>
 

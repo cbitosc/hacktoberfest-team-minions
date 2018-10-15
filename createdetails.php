@@ -1,28 +1,12 @@
+<html>
 <?php
 session_start();
- include 'companylogin.php';
+include 'companylogin.php';
  $a=$_SESSION["name"];
  $conn=new mysqli("localhost:3306", "root", "", "chanakya");
- ?>
 
-<html>
-    <head>
-    <title> </title>
-    <link rel="stylesheet" href="external.css">
-    <style>
-            input[type=text] 
-            {
-                border: 2px solid #0820f3;
-            }
-            input[type=number]
-            {
-                    border: 2px solid #0820f3;
-            }
-            input[type=date]
-            {
-                border: 2px solid #0820f3;
-            }
-        </style>
+ include 'header.php';?>
+<head>
         <script>
             function verify_em(s)
             {
@@ -58,7 +42,9 @@ session_start();
             </script>
     </head>
     <body>
-     <div class="d2">
+
+     <div class="jumbotron" style="height:100vh;" align="center">
+
          <form action="submitdetails.php" onsubmit="valthis()">   
     <table border="0" width="40" cellspacing="10" cellpadding="4">
         <thead>
@@ -88,17 +74,35 @@ session_start();
             </tr>
             <tr>
                 <td>Departments To Be Allowed:</td>
-                <td><input type="checkbox" name="companydepartments[]" id="companydepartments" value="cse"  />CSE
-                    <input type="checkbox" name="companydepartments[]" id="companydepartments" value="mechanical" />MECH<br>
-                    <input type="checkbox" name="companydepartments[]" id="companydepartments" value="ece" />ECE
-                    <input type="checkbox" name="companydepartments[]" id="companydepartments" value="it" />IT<br>
-                    <input type="checkbox" name="companydepartments[]" id="companydepartments" value="eee" />EEE
-                    <input type="checkbox" name="companydepartments[]" id="companydepartments" value="chemical" />CHEMICAL<br>
-                    <input type="checkbox" name="companydepartments[]" id="companydepartments" value="civil" />CIVIL 
-                    <input type="checkbox" name="companydepartments[]" id="companydepartments" value="mba" />MBA<br>
-                    <input type="checkbox" name="companydepartments[]" id="companydepartments" value="production" />PRODUCTION
-                    
-                </td>
+          <td>
+                <div class="form-check">
+    <input type="checkbox" class="form-check-input" name="companydepartments[]" id="companydepartments" value="cse">
+    <label class="form-check-label" for="companydepartments">Cse</label>
+</div>
+<div class="form-check">
+    <input type="checkbox" class="form-check-input" name="companydepartments[]" id="companydepartments1" value="ece">
+    <label class="form-check-label" for="companydepartments1">ece</label>
+</div>
+<div class="form-check">
+    <input type="checkbox" class="form-check-input" name="companydepartments[]" id="companydepartments2" value="mech">
+    <label class="form-check-label" for="companydepartments2">Mech</label>
+</div>
+<div class="form-check">
+    <input type="checkbox" class="form-check-input" name="companydepartments[]" id="companydepartments3" value="eee">
+    <label class="form-check-label" for="companydepartments3">eee</label>
+</div>
+<div class="form-check">
+    <input type="checkbox" class="form-check-input" name="companydepartments[]" id="companydepartments4" value="it">
+    <label class="form-check-label" for="companydepartments4">it</label>
+</div>
+<div class="form-check">
+    <input type="checkbox" class="form-check-input" name="companydepartments[]" id="companydepartments5" value="chemical">
+    <label class="form-check-label" for="companydepartments5">chemical</label>
+</div>
+<div class="form-check">
+    <input type="checkbox" class="form-check-input" name="companydepartments[]" id="companydepartments6" value="civil">
+    <label class="form-check-label" for="companydepartments6">civil</label>
+</div>
                 <td id="p1"></td>
             </tr>
             <tr>
@@ -107,17 +111,16 @@ session_start();
             </tr>
             <tr>
                 <td>Salary(lakhs):</td>
-                <td><input type="number" name="salary" required/></td>
+                <td><input type="text" name="salary" required/></td>
             </tr>
             <tr>
                 <td colspan="2" align="center"><input type="submit" value="SUBMIT" name="submit" /></td>
             </tr>
-
         </tbody>
-        
     </table>
     </form> 
     </div>
-        <br><br><br><br>
+        <?php include "footer.php"?>
+
 </body>
 </html>

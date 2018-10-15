@@ -66,18 +66,19 @@
                     <div class="tab-pane fade" id="panel8" role="tabpanel">
 
                         <!--Body-->
-                        <form class="modal-body">
+                        <form class="modal-body" action='signupverify.php'>
                             <div class="md-form form-sm mb-5">
                                 <i class="fa fa-user prefix"></i>
-                                <input type="email" id="modalLRInput12" name="name"class="form-control form-control-sm validate">
+                                <input type="text" id="modalLRInput12" name="name" class="form-control form-control-sm validate">
+
                                 <label data-error="wrong" data-success="right" for="modalLRInput12">Your Name</label>
                             </div>
 
 
                             <div class="md-form form-sm mb-5">
                                 <i class="fa fa-envelope prefix"></i>
-                                <input type="email" id="modalLRInput12" name="email"class="form-control form-control-sm validate">
-                                <label data-error="wrong" data-success="right" for="modalLRInput12">Your email</label>
+                                <input type="email" id="modalLRInput121" name="email"class="form-control form-control-sm validate">
+                                <label data-error="wrong" data-success="right" for="modalLRInput121">Your email</label>
                             </div>
                             
                             <div class="md-form form-sm mb-5">
@@ -88,12 +89,14 @@
 
                             <div class="md-form form-sm mb-5">
 
-                                <div class="form-check">
-                                  <input type="radio" class="form-check-input" id="materialUnchecked" value="student" name="type" checked>
-                                  <label class="form-check-label" for="materialUnchecked" >STUDENT  </label>
-                                  <input type="radio" class="form-check-input" id="materialChecked" name="type" value="mnc">
-                                  <label class="form-check-label" for="materialChecked">MNC</label>
-                              </div>
+<div class="form-check">
+  <!-- <i class="fa fa-user prefix"></i> -->
+  <input type="radio" class="form-check-input" id="materialUnchecked1" value="student" name="type1" checked>
+  <label class="form-check-label" for="materialUnchecked1" >STUDENT  </label>
+  <input type="radio" class="form-check-input" id="materialChecked1" name="type1" value="mnc">
+  
+  <label class="form-check-label" for="materialChecked1">MNC</label>
+</div>
 
                           </div>
 

@@ -38,7 +38,7 @@ if($r->num_rows)
     if($conn->query($s)==FALSE)
         echo $conn->error;
  echo "upadation succesful";
- //header("refresh:0 ; url:'companyhome.php'");
+ header("location:companyhome.php");
 }
 else
 {
@@ -47,6 +47,6 @@ else
     if($conn->query($s)==FALSE)
      echo $conn->error;
   echo "insertion succesful";
-  //header("refresh:0 ; url:'companyhome.php'");
+  header("location:companyhome.php");
 }
 ?>

@@ -1,12 +1,6 @@
-
-
-
 <html>
-    
-    <head>
-        <link href="logincss.css" rel="stylesheet" id="bootstrap-css">
-<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
-<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    <?php include 'header.php'; 
+    include 'footer.php';?>
 <script>
                     function verify_em(s)
             {
@@ -41,34 +35,26 @@
 </script>
     </head>
     <body>
-        <div class="form-control" id="frsDivTop">
-            <hr id="top"/>
-            <h1 id="he1">TRAINING AND PLACEMENT CELL</h1>
-            
-            
-            
-    		<hr id="mid" />
-    		<br/>
-    		
+    <nav class="mb-1 navbar navbar-expand-lg navbar-dark cyan">
+        <a class="navbar-brand" href="#">Training and Placement Cell</a>
+    </nav>
+        <div class="jumbotron" style="height:100vh;" id="frsDivTop">
+
     		<div align="center">
     		    <br/><br/>
     		    <div id="form" style=" ">
                         <form action="sendpassword.php" autocomplete="off">
-    					<h2 style="color : white; font-family:Calligrapher;">Login Here</h2><br>
+
+    					<h2 >Login Here</h2><br>
+
                                         <input type="text" id="email" name="email" placeholder="Enter Email" autofocus="autofocus" onblur="verify_em(this.id)"onfocus="fo()" style="border-radius : 10px; padding : 5px" required>
 
                                         <p id="p3"></p>
     					<input type="submit" name="sub" value="SUBMIT" class="btn btn-primary">
-                                        <br><br>
-                                        <input type="reset" value="RESET" class="btn btn-primary">
+                       <input type="reset" value="RESET" class="btn btn-primary">
     				</form><br/>
-    				
-    				
-    				
     			</div>
-    		</div><br><br>
-    		
-    		<br/><br/>
+    		</div>
 		</div>
     </body>
 </html>

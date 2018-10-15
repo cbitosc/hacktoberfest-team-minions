@@ -1,10 +1,12 @@
-<?php
-session_start();
-include 'studentlogin.php';?>
 <!DOCTYPE html>
 <html lang="en">
+<?php
+include 'header.php';
+include 'footer.php';
+include 'studentlogin.php';
+?>
 <body>
-    <div class="d7">
+    <div class="jumbotron" style="height:80vh">
     <form action="uploadimg.php" method="post" enctype="multipart/form-data">
         <table border="3" width="4" cellspacing="4" cellpadding="4" align="center">
             <tr>

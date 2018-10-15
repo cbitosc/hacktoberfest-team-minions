@@ -1,6 +1,10 @@
 <?php
 session_start();
+
+
+include 'header.php';
 include 'studentlogin.php';
+include 'footer.php';
 $conn=new mysqli("localhost:3306", "root", "", "chanakya");
 if($conn->connect_error)
 {
@@ -19,11 +23,6 @@ else{
     width:450px;
     border-radius: 25px;
     height: fit-content;
-    background: red; 
-    background: linear-gradient(red, yellow);
-    border: 15px solid  #0f0406;
-    color:black;
-    font:28px;
     font-weight:bold;
     text-shadow:4px 4px 8px white;'><br>No CV present to view<a href='createcv.php'> click here</a> to create a cv<br><br></div></html>";
     exit();    
@@ -75,7 +74,7 @@ else{
             }            </script>
     </head>
     <body>
-     <div class="d13">
+     <div class="jumbotron" style='height:200vh' align='center'>
          <br>
          <form action="cvsubmit.php">   
     <table align="center" border="0" width="40" cellspacing="10" cellpadding="4">
@@ -129,7 +128,6 @@ else{
             <tr>
                 <td>Gender:</td>
                 <td><input type="radio" name="gender"  required/>male
-                    <input type="radio" name="gender" required/>female
                 </td>
             </tr>
             <tr>
@@ -142,8 +140,9 @@ else{
                 <td><input type="text" name="undergraduationname" value="<?php echo $row['department']?>" required/></td>
             </tr>
             <tr>
-                <td>Percentage:</td>
-                <td><input type="number" name="undergraduationpercentage" min="70" max="100" required/></td>
+                <td>GPA:</td>
+                <td><input type="text" name="undergraduationpercentage" min="70" max="100" required/></td>
+
             </tr>
             <tr>
                 <td colspan="2"><hr></td>
